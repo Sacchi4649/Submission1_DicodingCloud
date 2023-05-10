@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav {
+  background-color: #00337C;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+ 
+  color: white;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+}
+ 
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00337C;
+  text-align: center;
+}
+ 
+h2, h3 {
+  color: #1C82AD;
+}
+
+h3 p {
+  font-weight: lighter;
+  color: black;
+}
+
+#content {
+  flex: 5;
+}
+
+#info-profil{
+  font-weight: bolder;
+}
+
+.jumbotron  {
+  background-image: url("../../assets/header.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  padding: 80px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+ 
+.profile header {
+  text-align: center;
+}
+ 
+.profile img {
+  width: 200px;
+}
+ 
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+}
+ 
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
+ 
+@media screen and (max-width: 768px) {}
+
